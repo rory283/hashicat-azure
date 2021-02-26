@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "workshop22"
+  name     = "${​​​​var.prefix}​​​​-workshop"
   location = var.location
 
   tags = {
